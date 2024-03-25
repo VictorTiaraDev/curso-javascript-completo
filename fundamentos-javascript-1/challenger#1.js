@@ -1,5 +1,5 @@
 
-//1 and 2- TEST'S
+//CHALLENGER #1
 
 let massMark = 78;
 let heightMark = 1.69;
