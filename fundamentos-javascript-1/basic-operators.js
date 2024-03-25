@@ -3,6 +3,7 @@
 //then how many people would live in each half?
 
 const country = "Portugal";
+const continent = "Europe";
 let population = 11;
 
 halfPopulation = population / 2;
@@ -29,9 +30,5 @@ console.log("A população de Portugal é maior que a populção de outro País?
 //'Portugal is in Europe, and its 11 million people speak portuguese'.
 
 population = population - 1;
-let sintese = country + ' is in Europe, and its ' + population + ' million people speak portuguese.';
+let sintese = country + ' is in ' + continent + ', and its ' + population + ' million people speak portuguese.';
 console.log(sintese);
-
-
-
-
