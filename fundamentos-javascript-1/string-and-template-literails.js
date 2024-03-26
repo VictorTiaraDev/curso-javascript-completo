@@ -1,4 +1,3 @@
-
 //1- If your country split in half, and each half would contain half the population, 
 //then how many people would live in each half?
 
