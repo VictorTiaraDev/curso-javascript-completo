@@ -1,8 +1,8 @@
 //CHALLENGER #1
 
-const massMark = 78;
+let massMark = 78;
 const heightMark = 1.69;
-const massjohn = 92;
+let massjohn = 92;
 const heightjohn = 1.95;
 
 let BMIMark = massMark / (heightMark * heightMark);
