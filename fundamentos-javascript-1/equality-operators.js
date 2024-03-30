@@ -1,4 +1,5 @@
 /*
+
 Declare a variable numNeighbours based on a prompt input like this:
 
 prompt('How many neighbour countries does your contry have?');
