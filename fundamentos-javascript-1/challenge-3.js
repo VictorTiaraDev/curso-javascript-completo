@@ -29,9 +29,9 @@ resultKoalas = scoreKoalas / 3;
 resultDolphins = scoreDolphins / 3;
 
 if (scoreKoalas > scoreDolphins) {
-    console.log(`${teamKoala} win the trophy, if ${teamKoala} win whith ${resultKoalas.toFixed(1)} points!`);
+    console.log(`${teamKoala} win the trophy, ${resultKoalas.toFixed(1)} points!`);
 } else if (scoreDolphins > scoreKoalas) {
-    console.log(`${teamDolphins} win the trophy, if ${teamDolphins} win with ${resultDolphins.toFixed(1)} points!`);
+    console.log(`${teamDolphins} win the trophy, ${resultDolphins.toFixed(1)} points!`);
 } else {
     console.log("there was a draw, both win the trophy.");
 }
