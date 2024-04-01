@@ -1,5 +1,4 @@
 /*
-
 LOGICAL OPERATORS:
 
 1 - Let's say Sarah is looking for a new country to live in. She wants to live in a country that speaks English, 
@@ -14,39 +13,26 @@ If not, log 'Portugal does not meet your criteria :('.
 4 - Probably your country does not meet all the criteria. 
 So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D).
 */
-
 const prompt = require("prompt-sync")();
-let population = Number(prompt('Qual a população do país em que quer viver? '));
-let language = prompt('Qual língua é falada por lá? ');
-let islandStr = prompt('É uma ilha? ');
-let country = 'Portugal'
-let countryAlternative = 'Canada'
-let isSland = false
+let population = (Number(prompt("Quantidade da população do país em que quer viver? ")));
+let language = prompt("Qual é a lingua falada lá? ");
+let islandStr = prompt("É uma ilha? ");
+let country = "Portugal";
+let countryAlternative = "Canadá";
+let isSland = false;
 
-// tratar a string para nao ter maiúscula nem espaços
-language = language.toLowerCase().trim().split(" ")
-.join("");
-islandStr = islandStr.toLowerCase()
+language = language.toLowerCase().trim().split(" ").join("");
+islandStr = islandStr.toLowerCase();
 
-
-
-//converter o input sobre ser ilha ou não de string para boolean
 if (islandStr === 'sim' || islandStr === 'yes' || islandStr === 's' || islandStr === 'y') {
-    isSland = true
-}else{
-    isSland = false
-}
-
-console.log(population)
-console.log(language)
-console.log(isSland)
-
-//também pode usar o localCompare para comparar strings em vez de === https://www.freecodecamp.org/news/javascript-string-comparison-how-to-compare-strings-in-js/
-
-if (population < 50 && (language === 'portuguese' || language === 'portugues') && isSland == false) {
-    console.log(`Você deveria morar em ${country}. :)`);
-} else if(population < 50 && (language === 'english' || language === 'ingles') && isSland == false){
-    console.log(`Você deveria morar no ${countryAlternative}. :)`);
-}else {
+    isSland = true;
+} else {
+    isSland = false;
+} if (population && (language === 'portuguese' || language === 'portugues') && isSland == false) {
+    console.log(`Deveria morar em ${country}`);
+} else if (population && (language === 'english' || language === 'ingles') && isSland == false) {
+    console.log(`Você deveria morar no ${countryAlternative}`);
+} else {
     console.log(`${country} não cumpre os seus critérios. :(`);
 }
+
