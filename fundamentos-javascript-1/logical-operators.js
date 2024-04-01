@@ -35,4 +35,3 @@ if (islandStr === 'sim' || islandStr === 'yes' || islandStr === 's' || islandStr
 } else {
     console.log(`${country} não cumpre os seus critérios. :(`);
 }
-
