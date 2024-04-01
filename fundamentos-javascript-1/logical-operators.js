@@ -28,7 +28,6 @@ language = language.toLowerCase().trim().split(" ")
 islandStr = islandStr.toLowerCase()
 
 
-
 //converter o input sobre ser ilha ou não de string para boolean
 if (islandStr === 'sim' || islandStr === 'yes' || islandStr === 's' || islandStr === 'y') {
     isSland = true
