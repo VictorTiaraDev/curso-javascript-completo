@@ -9,7 +9,7 @@ Store the returned values in 3 different variables, and log them to the console.
 */
 
 function describeCountry(country, population, capitalCity) {
- 
+
     return `${country} has ${population} million people and its capital city is ${capitalCity}`;
 }
 
