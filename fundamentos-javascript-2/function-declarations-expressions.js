@@ -21,8 +21,8 @@ console.log(calcAge1, calcAge2);
 const calAge3 = birthYeah => 2037 - birthYeah;
 const age3 = calAge3(1991);
 console.log(age3);
-
 */
+
 /*Function Declarations vs. Expressions
 
 1- The world population is 7900 million people. Create a function declaration called percentageOfWorld1 which receives 
