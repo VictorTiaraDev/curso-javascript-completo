@@ -13,6 +13,8 @@ let language = prompt('Qual o idioma do seu país? ');
 let isSlandStr = prompt('É uma ilha? ');
 let isSland = false;
 
+capitalCity = capitalCity.toLowerCase().trim().split(" ")
+    .join("");
 language = language.toLowerCase().trim().split(" ")
     .join("");
 isSlandStr = isSlandStr.toLowerCase()
@@ -23,5 +25,4 @@ if (isSlandStr === "yes" || isSlandStr === "sim" || isSlandStr === "y" || isSlan
     isSland = false;
 }
 
-const descCountrys = describleCountrys(country, population, capitalCity, language, isSlandStr);
-console.log(descCountrys);
+console.log(describleCountrys(country, population, capitalCity, language, isSlandStr));
