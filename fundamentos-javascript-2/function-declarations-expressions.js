@@ -33,7 +33,6 @@ For example, China has 1441 million people, so it's about 18.2% of the world pop
 
 3- Call percentageOfWorld1 for 3 populations of countries of your choice, store the results into variables, 
 and log them to the console.
-
 */
 
 let percentageOfWorld1 = percentWolrd => 7900;
