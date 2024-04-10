@@ -15,6 +15,7 @@ const descFinland = describeCountry('Finland', 6, 'Helsinki');
 function describeCountry(country, population, capitalCity) {
 
     return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+
 }
 
 console.log(descPortugal, descGermany, descFinland);
