@@ -32,4 +32,4 @@ const language = prompt('Qual é o idioma? ');
 const descpopulation = populattionOfWorld((population / 7900) * 100);
 
 const descOfWorld = describleCountrys();
-console.log(descOfWorld);
+console.log(country, population, capitalCity, language);
