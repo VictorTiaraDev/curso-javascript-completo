@@ -1,28 +1,4 @@
-/*
-//Function's
-
-//Function Declaration
-
-function calcAge1(birthYeah) {
-    return 2037 - birthYeah;
-
-}
-const age1 = calcAge1(1991);
-
-//Function Expression
-const calcAge2 = function (birthYeah) {
-    return 2037 - birthYeah;
-
-}
-const age2 = calcAge2(1991);
-console.log(calcAge1, calcAge2);
-
-//Arrow Expression
-const calAge3 = birthYeah => 2037 - birthYeah;
-const age3 = calAge3(1991);
-console.log(age3);
-*/
-
+/*https://www.hashtagtreinamentos.com/arrow-function-em-javascript?gad_source=1&gclid=CjwKCAjwt-OwBhBnEiwAgwzrUj1t6BpwgGbVG9VXvSpGiQE-P8LvXAaB2bi7efFXd8EnZexGAmyEWRoCgEwQAvD_BwE */
 /*Function Declarations vs. Expressions
 
 1- The world population is 7900 million people. Create a function declaration called percentageOfWorld1 which receives 
@@ -34,14 +10,13 @@ For example, China has 1441 million people, so it's about 18.2% of the world pop
 3- Call percentageOfWorld1 for 3 populations of countries of your choice, store the results into variables, 
 and log them to the console.
 */
+let worldPopulation = 7900
+let percentageOfWorld1 = population => (population / worldPopulation) * 100;
+let percPort = percentageOfWorld1(10);
+let percGer = percentageOfWorld1(83);
+let percFin = percentageOfWorld1(6);
 
-let percentageOfWorld1 = percentWolrd => 7900;
-let percent1 = percentageOfWorld1(7900 / 1);
-let percPort = (10 / 7900) * 100;
-let percGer = (83 / 7900) * 100;
-let percFin = (6 / 7900) * 100;
-
-console.log(`População total do Mundo é: ${percent1} milhões de habitantes.
+console.log(`População total do Mundo é: ${worldPopulation} milhões de habitantes.
 
  Porcentagem da população de Portugal é: ${percPort.toFixed(2)}% comparada ao resto do Mundo.
 
@@ -52,13 +27,12 @@ console.log(`População total do Mundo é: ${percent1} milhões de habitantes.
 //4- Create a function expression which does the exact same thing, called percentageOfWolrd2, 
 //and also call it with 3 country populations (can be the same populations).
 
-let percentageOfWorld2 = percentWolrd => 7900;
-let percent2 = percentageOfWorld2(7900 / 1);
-let percBra = (210 / 7900) * 100;
-let percIng = (78 / 7900) * 100;
-let percArg = (15 / 7900) * 100;
+let percentageOfWorld2 = population => (population / worldPopulation) * 100;
+let percBra = percentageOfWorld2(210)
+let percIng = percentageOfWorld2(78)
+let percArg = percentageOfWorld2(15)
 
-console.log(`População total do Mundo é: ${percent2} milhões de habitantes.
+console.log(`População total do Mundo é: ${worldPopulation} milhões de habitantes.
 
  Porcentagem da população de Brasil é: ${percBra.toFixed(2)}% comparada ao resto do Mundo.
 
