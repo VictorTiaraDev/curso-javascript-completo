@@ -1,4 +1,7 @@
 /*
+
+https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function
+
 Functions Calling Other Functions:
 
 1- Create a function called describePopulation. Use the function type you like the most. 
@@ -8,28 +11,23 @@ This function takes in two arguments: country and population, and returns a stri
 
 3- Call describePopulation with data for 3 countries of your choice.
 */
+let worldPopulation = 7900
 
-let populattionOfWorld = function (totalOfWorld) {
-    return totalOfWorld = 7900;
+
+let describePopulation = function (country, population) {
+    percentage = percentageOfWorld1(worldPopulation, population)
+    return `${country} has ${population} million people, which is about ${percentage.toFixed(2)}% of the world.`;
 }
 
-let describleCountrys = function (country, population, capitalCity, language) {
-    const totalOfWorld = populattionOfWorld(7900 / 1);
-    let population1 = (population / 7900) * 100;
-    const description =
-        `Seu país é: ${country} 
-    sua capital é: ${capitalCity} 
-    idioma falado é: ${language} 
-    Tem a porcentagem de ${population1.toFixed(2)}% comparado com a população mundial que é de ${totalOfWorld} bilhões de habitantes.`;
-    return description;
+
+
+let percentageOfWorld1 = function (worldPopulation, population) {
+    percentage = (population / worldPopulation) * 100
+    return percentage
 }
 
-const prompt = require("prompt-sync")();
-const country = prompt('Qual é seu país? ');
-const population = (Number(prompt('Qual é a população total? ')));
-const capitalCity = prompt('Qual é a capital? ');
-const language = prompt('Qual é o idioma? ');
-const descpopulation = populattionOfWorld((population / 7900) * 100);
-
-const descOfWorld = describleCountrys();
-console.log(country, population, capitalCity, language);
+let prompt = require("prompt-sync")();
+let country = prompt('Qual é seu país? ');
+let population = (Number(prompt('Qual é a população total? ')));
+let descpopulation = describePopulation (country, population);
+console.log(descpopulation);
