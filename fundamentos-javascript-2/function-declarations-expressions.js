@@ -16,12 +16,6 @@ let percPort = percentageOfWorld1(10);
 let percGer = percentageOfWorld1(83);
 let percFin = percentageOfWorld1(6);
 
-let worldPopulation = 7900
-let percentageOfWorld1 = population => (population / worldPopulation) * 100;
-let percPort = percentageOfWorld1(10);
-let percGer = percentageOfWorld1(83);
-let percFin = percentageOfWorld1(6);
-
 console.log(`População total do Mundo é: ${worldPopulation} milhões de habitantes.
 
  Porcentagem da população de Portugal é: ${percPort.toFixed(2)}% comparada ao resto do Mundo.
