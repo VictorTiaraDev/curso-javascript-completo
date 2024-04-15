@@ -35,7 +35,3 @@ const percentages = [
 ]
 
 console.log(percentages);
-
-
-
-
