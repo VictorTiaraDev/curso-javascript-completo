@@ -12,7 +12,6 @@ Use the function percentageOfWorld1 that you created earlier to compute the 4 pe
 
 let worldPopulation = 7900
 
-
 let describePopulation = function (country, population) {
     percentage = percentageOfWorld1(worldPopulation, population)
     return `${country} has ${population} million people, which is about ${percentage.toFixed(2)}% of the world.`;
