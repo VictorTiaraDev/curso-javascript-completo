@@ -4,7 +4,7 @@ let friends = ['Michael', 'Steven', 'Peter'];
 let newLength = friends.push('Jay');
 console.log(newLength);
 
-friends.unshift('John');
+friends.unshift('John'); //add 1ª element
 console.log(friends);
 
 //Remove Elements
