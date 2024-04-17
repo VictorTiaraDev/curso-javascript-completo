@@ -48,9 +48,9 @@ For example, you can search for 'Sweden' in the array, and then replace it with 
 let neighbours = ['Brasil', 'Argentina', 'Uruguai'];
 neighbours.push('Utopia');
 neighbours.pop('Utopia');
-neighbours.includes('Alemanha');
 
-if (!neighbours.includes('Alemanha')){
+
+if (!neighbours.includes('Alemanha')) {
     console.log(`Provalemnte não é um país da Europa Central :D`);
 }
 
