@@ -34,7 +34,7 @@ const calcAverage = (a, b, c) => (a + b + c) / 3;
 
 let scoreDolphins = calcAverage(44, 23, 71);
 let scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
+//console.log(scoreDolphins, scoreKoalas);
 
 let checkWinner = (avgDolphins, avgKoalas) => {
     if (avgDolphins >= 2 * avgKoalas) {
@@ -53,5 +53,5 @@ checkWinner(576, 111);
 
 scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
+//console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
