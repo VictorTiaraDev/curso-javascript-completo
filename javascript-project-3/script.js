@@ -10,10 +10,10 @@ let diceEl = document.querySelector('.dice');
 let current0El = document.getElementById('current--0');
 let current1El = document.getElementById('current--1');
 
-let playing = true;
-let currentScore = 0;
-let activePlayer = 0;
-let scores = [0, 0];
+let playing = false;
+let currentScore;
+let activePlayer;
+let scores;
 
 let btnNew = document.querySelector('.btn--new');
 let btnRoll = document.querySelector('.btn--roll');
@@ -26,10 +26,10 @@ score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
 const init = function () {
-  let playing = true;
-  let currentScore = 0;
-  let activePlayer = 0;
-  let scores = [0, 0];
+  playing = true;
+  currentScore = 0;
+  activePlayer = 0;
+  scores = [0, 0];
   score0El.textContent = 0;
   score1El.textContent = 0;
   diceEl.classList.add('hidden');
@@ -78,7 +78,7 @@ btnHold.addEventListener('click', function () {
   // 1. Add current score to active player's score.
   document.getElementById(`score--${activePlayer}`).textContent =
     scores[activePlayer];
-
+  currentScore = 0;
   // 2. Check if player's score is >= 100 Finish game.
   if (scores[activePlayer] >= 20) {
     //Finish the game
@@ -96,6 +96,10 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', function () {
+  playing = true;
+  currentScore = 0;
+  activePlayer = 0;
+  scores = [0, 0];
   score0El.textContent = 0;
   score1El.textContent = 0;
   current0El.textContent = 0;
