@@ -10,6 +10,11 @@ let diceEl = document.querySelector('.dice');
 let current0El = document.getElementById('current--0');
 let current1El = document.getElementById('current--1');
 
+let playing = true;
+let currentScore = 0;
+let activePlayer = 0;
+let scores = [0, 0];
+
 let btnNew = document.querySelector('.btn--new');
 let btnRoll = document.querySelector('.btn--roll');
 let btnHold = document.querySelector('.btn--hold');
@@ -21,10 +26,10 @@ score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
 const init = function () {
-  let scores = [0, 0];
+  let playing = true;
   let currentScore = 0;
   let activePlayer = 0;
-  let playing = true;
+  let scores = [0, 0];
   score0El.textContent = 0;
   score1El.textContent = 0;
   diceEl.classList.add('hidden');
